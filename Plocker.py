@@ -19,3 +19,10 @@ class User:
         for user in cls.user_details:
             if user.username==number:
                 return user
+
+    @classmethod
+    def check_account_existence(cls,number):
+        for user in cls.user_details:
+            if user.username==number:
+                return True;
+        return False
