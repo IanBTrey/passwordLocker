@@ -45,3 +45,14 @@ class UserTest(unittest.TestCase):
         test_userDetails=User("Test","user","oceanpark@gmail.com")
         test_userDetails.create()
         self.assertEqual(len(User.user_details),2)
+    #test 5
+    def delete_user_details_test(self):
+        '''
+        delete_test to check if we can erase a credential from our account
+        '''
+        self.user_details.create()
+        test_userDetails=User("Test","user","oceanpark@gmail.com")
+        test_userDetails.create()
+
+        self.user_details.delete_password() # deletes a password
+        self.assertEqual(len(User.user_details),1)
