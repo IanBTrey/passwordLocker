@@ -103,7 +103,7 @@ def main():
                     password=input()
                     save_user(create(thisAccount,username,password))
                     print("\n")
-                    print(f"{thisAccout} account details saved succefully")
+                    print(f"{thisAccount} account details saved succefully")
                     print("\n")
 
                 elif short_codes=="dp":
