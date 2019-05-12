@@ -35,3 +35,9 @@ class Password():
     """""
     class that generates new instances of password hold
     """""
+
+    def __init__(self,runPassword):
+        self.runPassword=runPassword
+    def generatePassword():
+        password="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+        return password
