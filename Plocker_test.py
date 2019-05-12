@@ -85,3 +85,7 @@ class UserTest(unittest.TestCase):
         display_all_passwords_test to display all account passwords
         '''
         self.assertEqual(User.display_user(),User.user_details)
+
+
+if __name__ == '__main__':
+    unittest.main()
