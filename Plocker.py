@@ -26,3 +26,7 @@ class User:
             if user.username==number:
                 return True;
         return False
+
+    @classmethod
+    def display_user(cls):
+        return cls.user_details
