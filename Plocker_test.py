@@ -79,3 +79,9 @@ class UserTest(unittest.TestCase):
 
         account_exist=User.check_account_existence("Test")
         self.assertTrue(account_exist)
+    #test 8
+    def display_all_passwords_test(self):
+        '''
+        display_all_passwords_test to display all account passwords
+        '''
+        self.assertEqual(User.display_user(),User.user_details)
