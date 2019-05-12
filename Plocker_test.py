@@ -67,3 +67,15 @@ class UserTest(unittest.TestCase):
 
         found_account=User.find_by_accountName("Test")
         self.assertEqual(found_account.username,test_userDetails.username)
+
+    #test 7
+    def check_account_existence_test(self):
+        '''
+        check_account_existence_test to check for the existence of an account
+        '''
+        self.user_details.create()
+        test_userDetails=User("Test","user","oceanpark@gmail.com")
+        test_userDetails.create()
+
+        account_exist=User.check_account_existence("Test")
+        self.assertTrue(account_exist)
