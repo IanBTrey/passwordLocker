@@ -9,7 +9,7 @@ This application gives the user an option to create new accounts and password as
 * Python3 or later is installed in your PC.
 * go to github and search for IanBTrey.
 * clone the directory into your local machine
-* run the $ python3.6 -m pip install pyperclip
+* `run the $ python3.6 -m pip install pyperclip`
 * navigate to the cloned folder by `cd passwordLocker`
 * run this command on terminal `chmod +x Run.py`
 * run `./Run.py`
