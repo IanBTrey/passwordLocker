@@ -66,6 +66,7 @@ def random_password(limit):
 
 def main():
         print("Hello! Welcome to your Password Locker.Sign up below")
+        print("Enter your userName")
         name=input()
         print("Use g to generate password or m to make your own password")
         short_codes=input().lower()
