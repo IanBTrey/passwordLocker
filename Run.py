@@ -48,3 +48,16 @@ def check_account_existence(number):
     Function to check if account exists
     '''
     return User.account_exist(number)
+
+
+def random_password(limit):
+    '''
+    Function to create random password
+    '''
+    password="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    run=len(password)
+    hold=''
+    for i in range(0,limit):
+        all=password[random.randint(0,run)]
+        hold=hold+all
+    return hold
