@@ -29,3 +29,9 @@ def delete_account(Plocker):
     Function to delete account
     '''
     Plocker.delete()
+
+def display_passwords():
+    '''
+    Function to display all passwords
+    '''
+    return User.display_user()
