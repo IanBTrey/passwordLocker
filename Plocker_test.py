@@ -29,3 +29,10 @@ class UserTest(unittest.TestCase):
         self.assertEqual(self.user_details.username,"IanBTrey")
         self.assertEqual(self.user_details.password,"Manchester44")
         self.assertEqual(self.user_details.email,"kibetkirui010@gmail.com")
+    #test 3
+    def create_test(self):
+        '''
+        create_test to test for creation of new credentials
+        '''
+        self.user_details.create() #create a new account/credentials
+        self.assertEqual(len(User.user_details),1)
