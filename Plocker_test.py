@@ -18,3 +18,14 @@ class UserTest(unittest.TestCase):
         """
         This is a set up function that runs every time before each test clauses
         """
+
+        #checks for user details
+        self.user_details=User("IanBTrey","Manchester44","kibetkirui010@gmail.com")
+    #test 2
+    def test_init(self):
+        '''
+        test_init test case to test if the object is initialized properly
+        '''
+        self.assertEqual(self.user_details.username,"IanBTrey")
+        self.assertEqual(self.user_details.password,"Manchester44")
+        self.assertEqual(self.user_details.email,"kibetkirui010@gmail.com")
