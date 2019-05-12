@@ -36,3 +36,12 @@ class UserTest(unittest.TestCase):
         '''
         self.user_details.create() #create a new account/credentials
         self.assertEqual(len(User.user_details),1)
+    #test 4
+    def save_user_details_test(self):
+        '''
+        save_test to check if we can save multiple accounts/credentials in our user_details
+        '''
+        self.user_details.create()
+        test_userDetails=User("Test","user","oceanpark@gmail.com")
+        test_userDetails.create()
+        self.assertEqual(len(User.user_details),2)
