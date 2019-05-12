@@ -95,7 +95,7 @@ def main():
                     print("-"*20)
                     print("Are you ready to create a new password?\n")
                     print(f"{name} Please enter the account name you need to be saved eg-Instagram | Facebook | Github")
-                    this account=input()
+                    thisAccount=input()
                     print("Enter username")
                     username=input();
                     print("Enter the password and make sure no one is watching")
