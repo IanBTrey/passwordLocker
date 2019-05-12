@@ -30,3 +30,8 @@ class User:
     @classmethod
     def display_user(cls):
         return cls.user_details
+
+class Password():
+    """""
+    class that generates new instances of password hold
+    """""
