@@ -101,6 +101,7 @@ def main():
                     username=input();
                     print("Enter the password and make sure no one is watching")
                     password=input()
+                    thisAccount="passwordLocker"
                     save_user(create(thisAccount,username,password))
                     print("\n")
                     print(f"{thisAccount} account details saved succefully")
@@ -163,7 +164,7 @@ def main():
                 else:
                     print("Invalid!...would you please use the short codes")
         else:
-            print("wrong usermame or password")
+            print("wrong username or password")
 
 if __name__ == '__main__':
     main()
