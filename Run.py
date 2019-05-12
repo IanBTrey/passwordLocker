@@ -35,3 +35,16 @@ def display_passwords():
     Function to display all passwords
     '''
     return User.display_user()
+
+
+def search_account(number):
+    '''
+    Function to search for account
+    '''
+    return User.find_by_accountName(number)
+
+def check_account_existence(number):
+    '''
+    Function to check if account exists
+    '''
+    return User.account_exist(number)
