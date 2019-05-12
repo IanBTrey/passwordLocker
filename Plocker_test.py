@@ -56,3 +56,14 @@ class UserTest(unittest.TestCase):
 
         self.user_details.delete_password() # deletes a password
         self.assertEqual(len(User.user_details),1)
+    #test 6
+    def find_by_accountName_test(self):
+        '''
+        find_test to search for a particular account and display them
+        '''
+        self.user_details.create()
+        test_userDetails=User("Test","user","oceanpark@gmail.com")
+        test_userDetails.create()
+
+        found_account=User.find_by_accountName("Test")
+        self.assertEqual(found_account.username,test_userDetails.username)
