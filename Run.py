@@ -94,7 +94,7 @@ def main():
             print("\n")
             print(f"Welcome to your dashboard {username}")
             while True:
-                print("These are short code to help you navigate through\n sp- save new password dp-- display all passwords fa-- find a specific account password  dp-- delete password ex-- exit this application")
+                print("These are short code to help you navigate through\n sp- save new password dp-- display all passwords fa-- find a specific account password  dl-- delete password ex-- exit this application")
                 short_codes=input().lower()
                 if short_codes=="sp":
                     print("-"*20)
