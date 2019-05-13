@@ -68,7 +68,7 @@ def main():
         print("Hello! Welcome to your Password Locker.Sign up below")
         print("Enter your userName")
         username=input()
-        print("account")
+        print("Enter your account")
         accountName=input()
         print("Use g to generate password or m to make your own password")
         short_codes=input().lower()
