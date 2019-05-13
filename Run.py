@@ -79,7 +79,7 @@ def main():
             print("Enter your password")
             password=input()
         thisAccount="passwordLocker"
-        save_user(create(thisAccount,password,name))
+        save_user(create(User,password,name))
         print("\n")
         print(f"Welcome {name}! Please Login below")
         print("Enter the username that you just created")
